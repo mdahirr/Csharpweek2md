@@ -48,7 +48,6 @@ namespace UnitTests
         [TestCase(12)]
         [TestCase(10)]
         [TestCase(5)]
-
         public void GivenAgeIsLessThan12(int ageOfViewer)
             {
                 var expectedResult = "U, PG & 12 films are available.";

@@ -33,13 +33,17 @@
         public static string AvailableClassifications(int ageOfViewer)
         {
             string result;
-            if (ageOfViewer <= 12)
+            if (ageOfViewer < 12)
             {
-                result = "U, PG & 12 films are available.";
+                result = "U & PG films are available.";
             }
             else if (ageOfViewer < 15 && ageOfViewer > 12)
             {
-                result = "U, PG, 12 & 15 films are available.";
+                result = "U, PG, 12 films are available.";
+            }
+            else if (ageOfViewer >= 15 && ageOfViewer < 18)
+            {
+                result = result = "U, PG, 12 & 15 films are available.";
             }
             else
             {
