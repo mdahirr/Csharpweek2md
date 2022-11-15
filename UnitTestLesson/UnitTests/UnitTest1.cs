@@ -29,28 +29,31 @@ namespace UnitTests
             Assert.That("Good morning!", Is.EqualTo(CodeToTest.Program.Greeting(7)));
             */
         }
+
+        [TestCase(15)]
+        public void GivenATimeOf15_Greeting_ReturnsGoodAfternoon(int time)
+        {
+            //var time = 15
+            var expectedGreeting = "Good afternoon!";
+
+            // act
+            var result = CodeToTest.Program.Greeting(time);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(expectedGreeting));
+        }
     }
+
     public class Classification_Tests
     { 
-            [TestCase(15)]
-            public void GivenATimeOf15_Greeting_ReturnsGoodAfternoon(int time)
-            {
-                //var time = 15
-                var expectedGreeting = "Good afternoon!";
 
-                // act
-                var result = CodeToTest.Program.Greeting(time);
-
-                //Assert
-                Assert.That(result, Is.EqualTo(expectedGreeting));
-            }
-
-        [TestCase(12)]
+        [TestCase(11)]
         [TestCase(10)]
         [TestCase(5)]
+
         public void GivenAgeIsLessThan12(int ageOfViewer)
             {
-                var expectedResult = "U, PG & 12 films are available.";
+                var expectedResult = "U and PG films are available.";
 
                 // Act
                 var result = CodeToTest.Program.AvailableClassifications(ageOfViewer);
@@ -59,10 +62,11 @@ namespace UnitTests
             }
 
         [TestCase(13)]
-        [TestCase(15)]
-        public void GivenAgeIsLessThan15(int ageOfViewer)
+        [TestCase(14)]
+
+        public void GivenAgeIsBetween12And14(int ageOfViewer)
             {
-                var expectedResult = "U, PG, 12 & 15 films are available.";
+                var expectedResult = "U, PG and 12 films are available.";
 
                 // Act
                 var result = CodeToTest.Program.AvailableClassifications(ageOfViewer);
@@ -72,6 +76,16 @@ namespace UnitTests
 
             }
 
+        public void GivenAgeIsBetween15and18(int ageOfViewer)
+        {
+            var expectedResult = "U, PG, 12 and 15 films are available.";
+
+            //Act
+            var result = CodeToTest.Program.AvailableClassifications(ageOfViewer);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(expectedResult));
+        }
         [TestCase(18)]
         [TestCase(19)]
         [TestCase(20)]
