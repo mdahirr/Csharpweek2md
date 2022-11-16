@@ -26,3 +26,32 @@
 
 //Console.WriteLine(f);
 #endregion
+
+const int DAYS_IN_WEEK = 7;
+var daysToBirthday = 23;
+
+
+
+var weeks = daysToBirthday / DAYS_IN_WEEK;
+var days = daysToBirthday % DAYS_IN_WEEK;
+
+
+
+Console.WriteLine($"weeks: {weeks} -- days: {days}");
+
+
+const int NUM_ROWS = 2;
+const int NUM_COLS = 5;
+bool running = true;
+int row = 0;
+int col = 0;
+int spriteNo = -1;
+
+
+
+while (running)
+{
+    spriteNo = spriteNo++ % (NUM_ROWS * NUM_COLS);
+    row = spriteNo / NUM_COLS;
+    col = spriteNo % NUM_COLS;
+}
