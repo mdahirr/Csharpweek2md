@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorsApp", "OperatorsAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorsControlFlow.Tests", "OperatorsControlFlow.Tests\OperatorsControlFlow.Tests.csproj", "{17D829AA-3763-40DD-937B-83CF8D1BC53D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowApp", "ControlFlowApp\ControlFlowApp.csproj", "{CF8B5E56-77EB-4986-8F3F-77D8158F92EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{17D829AA-3763-40DD-937B-83CF8D1BC53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D829AA-3763-40DD-937B-83CF8D1BC53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D829AA-3763-40DD-937B-83CF8D1BC53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8B5E56-77EB-4986-8F3F-77D8158F92EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8B5E56-77EB-4986-8F3F-77D8158F92EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8B5E56-77EB-4986-8F3F-77D8158F92EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8B5E56-77EB-4986-8F3F-77D8158F92EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
