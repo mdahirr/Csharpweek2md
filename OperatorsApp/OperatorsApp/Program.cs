@@ -52,7 +52,14 @@
 #endregion
 
 string greeting = null;
-if (greeting != null & greeting.ToLower().StartsWith('a'))
+try
 {
-    Console.WriteLine($"{greeting} starts with 'a'");
+    if (greeting != null & greeting.ToLower().StartsWith('a'))
+    {
+        Console.WriteLine($"{greeting} starts with 'a'");
+    }
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
 }

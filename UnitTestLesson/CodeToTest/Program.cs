@@ -12,42 +12,57 @@
 
         public static string Greeting(int timeOfDay)
         {
-            string greeting;
-
-            if (timeOfDay >= 5 && timeOfDay <= 12)
+            string greeting = " ";
+            try
             {
-                greeting = "Good morning!";
+                if (timeOfDay >= 5 && timeOfDay <= 12)
+                {
+                    greeting = "Good morning!";
+                }
+                else if (timeOfDay > 12 && timeOfDay <= 18)
+                {
+                    greeting = "Good afternoon!";
+                }
+                else
+                {
+                    greeting = "Good evening!";
+                }
             }
-            else if (timeOfDay > 12 && timeOfDay <= 18)
+            catch(Exception e) 
             {
-                greeting = "Good afternoon!";
+                Console.WriteLine(e.Message);
             }
-            else
-            {
-                greeting = "Good evening!";
-            }
+            
 
             return greeting;
         }
 
         public static string AvailableClassifications(int ageOfViewer)
         {
-            string result;
-            if (ageOfViewer < 12)
+            string result = "";
+            try
             {
-                result = "U and PG films are available.";
+                
+                if (ageOfViewer < 12)
+                {
+                    result = "U and PG films are available.";
+                }
+                else if (ageOfViewer < 15 && ageOfViewer >= 12)
+                {
+                    result = "U, PG and 12 films are available.";
+                }
+                else if (ageOfViewer >= 15 && ageOfViewer < 18)
+                {
+                    result = "U, PG, 12 and 15 films are available.";
+                }
+                else
+                {
+                    result = "All films are available.";
+                }
             }
-            else if (ageOfViewer < 15 && ageOfViewer >= 12)
+            catch (ArgumentException e) 
             {
-                result = "U, PG and 12 films are available.";
-            }
-            else if (ageOfViewer >= 15 && ageOfViewer < 18)
-            {
-                result = "U, PG, 12 and 15 films are available.";
-            }
-            else
-            {
-                result = "All films are available.";
+                Console.WriteLine(e.Message);
             }
             return result;
         }
