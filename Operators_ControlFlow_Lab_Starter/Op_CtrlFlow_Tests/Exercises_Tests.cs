@@ -8,10 +8,23 @@ namespace Op_CtrlFlow_Tests
     {
         // write unit test(s) for MyMethod here
         [TestCase(1,1)]
-        public void MyMethodTestsWhenNumIsTheSame(int num1, int num2, bool expectedResult)
+        public void MyMethodTestsWhenNumIsTheSame(int num1, int num2)
         {
-            var
+            bool expectedResult = false;
+            bool result = Exercises.MyMethod(num1, num2);
 
+            Assert.That(result, Is.EqualTo(expectedResult));
+
+        }
+
+        [TestCase(4,2)]
+        [TestCase(8,4)]
+        public void MyMethodTestsWhenNumsAreDifferent(int num1, int num2)
+        {
+            bool expectedResult = true;
+            bool result = Exercises.MyMethod(num1, num2);
+
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         
