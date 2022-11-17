@@ -31,4 +31,5 @@ namespace OperatorsControlFlow.Tests
                 Assert.That(result, Is.EqualTo(expectedResult));
             }
         }
+    }
 }
