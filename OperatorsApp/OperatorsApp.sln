@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowApp", "ControlFl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsApp", "LoopsApp\LoopsApp.csproj", "{2284550E-E0D1-463E-8C2C-7783D783D30D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsApp", "Exceptions\ExceptionsApp.csproj", "{6029E2C4-AFB1-40E7-BD02-3939A174D4F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{D5ADDF2C-F0E4-4876-99D8-E6BE4D7A75C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2284550E-E0D1-463E-8C2C-7783D783D30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2284550E-E0D1-463E-8C2C-7783D783D30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2284550E-E0D1-463E-8C2C-7783D783D30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6029E2C4-AFB1-40E7-BD02-3939A174D4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6029E2C4-AFB1-40E7-BD02-3939A174D4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6029E2C4-AFB1-40E7-BD02-3939A174D4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6029E2C4-AFB1-40E7-BD02-3939A174D4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5ADDF2C-F0E4-4876-99D8-E6BE4D7A75C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5ADDF2C-F0E4-4876-99D8-E6BE4D7A75C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5ADDF2C-F0E4-4876-99D8-E6BE4D7A75C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5ADDF2C-F0E4-4876-99D8-E6BE4D7A75C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
