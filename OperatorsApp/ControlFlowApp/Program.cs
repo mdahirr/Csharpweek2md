@@ -1,11 +1,11 @@
 ﻿//int mark = 35;
 //var grade = mark >= 65 ? (mark >= 85 ? "Distinction" : "Pass") : "Fail";
 
-string greeting = null;
-if (greeting != null & greeting.ToLower().StartsWith('a'))
-{
-    Console.WriteLine($"{greeting} starts with 'a'");
-}
+//string greeting = null;
+//if (greeting != null & greeting.ToLower().StartsWith('a'))
+//{
+//    Console.WriteLine($"{greeting} starts with 'a'");
+//}
 
 //public class GradeMark
 //    {
@@ -18,8 +18,24 @@ if (greeting != null & greeting.ToLower().StartsWith('a'))
 
 public partial class Program
 {
+    public static void Main(string[] args)
+    {
+        try
+        {
+            Console.WriteLine($"stefano's mark is 82: {Grade(82)}");
+            Console.WriteLine($"Phil's mark is -82: {Grade(-82)}");
+        }
+        catch (ArgumentException e ) 
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
     public static string Grade(int mark)
     {
+        if (mark < 0 || mark > 100)
+        {
+            throw new ArgumentException( "Mark value of " + mark + " outside of range 0-100");
+        }
         var grade = mark >= 65 ? (mark >= 85 ? "Distinction" : "Pass") : "Fail";
         return grade;
     }
@@ -45,7 +61,8 @@ public partial class Program
             default:
                 priority = "Error";
                 break;
-        }   
+        }
+        return priority;
     }
 
     public static string DrivingLaw(int age)
