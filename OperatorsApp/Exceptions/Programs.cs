@@ -1,6 +1,6 @@
 ﻿namespace Exceptions
 {
-    internal class Program
+    internal class Programs
     {
         static void Main(string[] args)
         {
