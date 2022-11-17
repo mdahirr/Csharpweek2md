@@ -16,11 +16,11 @@ namespace OperatorsControlFlow.Tests
         {
             string expectedResult = "Pass";
 
-            string result = Program.GradeMethod(mark);
+            string result = Program.Grade(mark);
 
-            Assert.That(expectedResult, Is.Equalto(result));
+            Assert.That(expectedResult, Is.EqualTo(result));
 
-            Assert.That(Program.Grade(mark) Is.Equalto(expectedResult));
+            Assert.That(Program.Grade(mark), Is.EqualTo(expectedResult));
 
         }
     }
