@@ -100,19 +100,56 @@ static void JaggedArrays()
     }
 }
 
-int[] arr = new int[5];
+//int[] arr = new int[5];
 
 
 
-int[,] multiArr = new int[3, 5];
+//int[,] multiArr = new int[3, 5];
 
 
 
-int[][] jaggedArr = new int[3][];
-jaggedArr[0] = new int[5];
-jaggedArr[1] = new int[4];
-jaggedArr[2] = new int[5];
+//int[][] jaggedArr = new int[3][];
+//jaggedArr[0] = new int[5];
+//jaggedArr[1] = new int[4];
+//jaggedArr[2] = new int[5];
 
+static void DateTimeMethods()
+{
+    var now = DateTime.Now;
+    Console.WriteLine($"The time now is {now}");
+    Console.WriteLine($"in ticks this is {now.Ticks}");
+
+    var birthdayIf18 = now.AddYears(-18);
+    Console.WriteLine(
+        $"If you are 18 today, you were born on " +
+        $"{birthdayIf18.ToString("dd MMMM, yyyy")}");
+}
+
+static void Enums()
+{
+    Suit theSuit = Suit.HEARTS;
+    if (theSuit == Suit.SPADES)
+    {
+        Console.WriteLine($"Suit is {Suit.SPADES}!");
+    }
+    else
+    {
+        Console.WriteLine($"The suit is not {Suit.SPADES}!");
+    }
+}
+
+public enum Suit
+{
+    HEARTS,
+    CLUBS,
+    DIAMONDS,
+    SPADES
+}
+
+Enums();
+
+
+//DateTimeMethods();
 
 
 //JaggedArrays();
@@ -132,3 +169,5 @@ jaggedArr[2] = new int[5];
 //var myString = " c# List fundamentals";
 
 //Console.WriteLine(StringBuilderExercise(myString));
+
+
