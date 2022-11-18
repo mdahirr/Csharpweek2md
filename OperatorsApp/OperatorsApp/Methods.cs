@@ -11,14 +11,30 @@ namespace OperatorsApp
     {
         public static int GetStones(int totalPounds)
         {
-            int stones = totalPounds / 14;
-            return stones;
+            try
+            {
+                int stones = totalPounds / 14;
+                return stones;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
         }
 
         public static int GetPounds(int totalPounds)
-        { 
-            int pounds = totalPounds % 14;
-            return pounds;
+        {
+            try
+            {
+                int pounds = totalPounds % 14;
+                return pounds;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message); 
+            }
         }
+            
     }
 }

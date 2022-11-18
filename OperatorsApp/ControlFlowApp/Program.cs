@@ -23,7 +23,7 @@ public partial class Program
             Console.WriteLine($"stefano's mark is 82: {Grade(82)}");
             Console.WriteLine($"Phil's mark is -82: {Grade(-82)}");
         }
-        catch (ArgumentException e ) 
+        catch (ArgumentException e) 
         {
             Console.WriteLine(e.Message);
         }

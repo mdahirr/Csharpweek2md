@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Op_CtrlFlow
@@ -10,17 +11,17 @@ namespace Op_CtrlFlow
             return num1 == num2 ? false : (num1 % num2) == 0;
         }
 
+        static Exception emptyString = new Exception("Empty list");
         // returns the average of the array nums
         public static double Average(List<int> nums)
         {
-            if (nums == null || nums.Count == 0)
+            //if (nums == null || nums.Count == 0) throw new Exception("Empty list")
+
+            try
             {
-                return 0;
-            }
-            else
-            {            
                 return nums.Average();
             }
+            catch (Exception e) { Console.WriteLine(e.Message); }
         }
 
         // returns the type of ticket a customer is eligible for based on their age

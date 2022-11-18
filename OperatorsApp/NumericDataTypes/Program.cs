@@ -50,22 +50,22 @@
             //num += 1;
             //Console.WriteLine(num3);
 
-            double x = 3.14159265359;
-            float y = (float)x;
-            Console.WriteLine(x);
-            Console.WriteLine(y);
+            //double x = 3.14159265359;
+            //float y = (float)x;
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
 
-            int numCows = 260;
-            uint countCows = (uint)numCows;
-            byte byteCows = (byte)numCows;
+            //int numCows = 260;
+            //uint countCows = (uint)numCows;
+            //byte byteCows = (byte)numCows;
 
-            int bankBalance = -2;
-            uint posBalance = (uint)bankBalance;
+            //int bankBalance = -2;
+            //uint posBalance = (uint)bankBalance;
 
-            Console.WriteLine(Convert.ToString(bankBalance, 2));
-            Console.WriteLine(Convert.ToString(posBalance, 2));
-            Console.WriteLine(Convert.ToString(numCows, 2));
-            Console.WriteLine(Convert.ToString(byteCows, 2));
+            //Console.WriteLine(Convert.ToString(bankBalance, 2));
+            //Console.WriteLine(Convert.ToString(posBalance, 2));
+            //Console.WriteLine(Convert.ToString(numCows, 2));
+            //Console.WriteLine(Convert.ToString(byteCows, 2));
 
             //float pi = 3.14f;
             //bool boolPi = (bool)pi;
@@ -74,17 +74,17 @@
 
             // convert Class
 
-            // no conversion
-            var theInt = 5;
-            var anotherInt = Convert.ToInt32(theInt);
+            //// no conversion
+            //var theInt = 5;
+            //var anotherInt = Convert.ToInt32(theInt);
 
-            //safe - widening
-            var myDouble = Convert.ToDouble(theInt);    
+            ////safe - widening
+            //var myDouble = Convert.ToDouble(theInt);    
 
-            // unsafe - narrowing with no data loss
-            var myShort = Convert.ToInt16(theInt);
-            double myPi = 3.14;
-            float floatPi = Convert.ToSingle(myPi);
+            //// unsafe - narrowing with no data loss
+            //var myShort = Convert.ToInt16(theInt);
+            //double myPi = 3.14;
+            //float floatPi = Convert.ToSingle(myPi);
 
             // unsafe conversions with loss of data
             // int myCows = 260;
@@ -96,6 +96,11 @@
             // DateTime piDay = Convert.ToDateTime(myPi);
 
             // int myFive = Convert.ToInt32("five");
+
+            byte num = Byte.MaxValue;
+            Console.WriteLine("Byte max: " + num);
+            num += 1;
+            Console.WriteLine(num);
         }
     }
 }
