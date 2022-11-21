@@ -27,7 +27,7 @@ namespace MoreTypes_Lib
         // returns a date formatted in the manner specified by the unit test
         public static string FormatDate(DateTime date)
         {
-            string newdate = date.ToString("%y/%d/MMM");
+            string newdate = date.ToString("yy/dd/MMM");
             return newdate;
         }
 

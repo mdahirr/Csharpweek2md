@@ -18,7 +18,7 @@ namespace MoreTypes_Lib
 
             return firstName + totalNums;
             
-            throw new NotImplementedException();
+            
         }
 
         // returns a formatted address string given its components
@@ -27,7 +27,7 @@ namespace MoreTypes_Lib
             string doorNum = number.ToString();
             string FullAddress = $"{doorNum} {street}, {city} {postcode}.";
             return FullAddress;
-            throw new NotImplementedException();
+            
         }
         // returns a string representing a test score, written as percentage to 1 decimal place
         public static string Scorer(int score, int outOf)
@@ -36,7 +36,7 @@ namespace MoreTypes_Lib
             double finalScoreRnded = Math.Round(finalScore, 1);
             string result = $"You got {score} out of {outOf}: {finalScoreRnded}%";
             return result;
-            throw new NotImplementedException();
+            
         }
 
         // returns the double represented by the string, or -999 if conversion is not possible
@@ -49,7 +49,7 @@ namespace MoreTypes_Lib
                 return result;
             }
             return - 999;
-            throw new NotImplementedException();
+            
         }
 
         // Returns the a string containing the count of As, Bs, Cs and Ds in the parameter string
@@ -82,8 +82,6 @@ namespace MoreTypes_Lib
             }
 
             return $"A:{ACount} B:{BCount} C:{CCount} D:{DCount}";
-
-            throw new NotImplementedException();
         }
     }
 }
